@@ -12,9 +12,9 @@ app.use((req, res, next) => {
 })
 
 
+app.use('/students', studentRouter)
 app.use('/', homeRouter);
 
-app.use('/students', studentRouter)
 
 app.listen(1212, () => {
     console.log('server listening to port: 1212');

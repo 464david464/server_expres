@@ -3,9 +3,9 @@ const path = require('path')
 const router = express.Router()
 const viewPath = path.join(__dirname + '/../views/')
 
-router.use('/students', express.static(viewPath + 'students'))
+router.use('/', express.static(viewPath + 'students'))
 
-router.get('/students', (req, res) => {
+router.get('/', (req, res) => {
     res.sendFile(viewPath + 'students/students.html')
     console.log('hi prom express');
 })

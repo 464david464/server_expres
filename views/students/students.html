@@ -1,14 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="students.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="students.css" />
     <title>students</title>
-</head>
-<body>
-    <h1>students</h1>
-    <script src="./students.js"></script>
-</body>
+  </head>
+  <body>
+    <header>
+        <h1>students</h1>
+        <a href="/" id="return-home">Home</a>
+      <nav>
+        <button id="create">add student</button>
+        <button id="read">get the students list</button>
+        <button id="update">change details</button>
+        <button id="delete">delete student</button>
+      </nav>
+    </header>
+    <main>
+        <div id="container"></div>
+    </main>
+    <script src="./students.js" type="module"></script>
+  </body>
 </html>
+
